@@ -24,7 +24,8 @@ public class Calculator {
 
         //get first number from user:
         //use methods
-        cal.getDataTypeInput();
+        cal.getDataTypeInput();//first number
+        cal.getDataTypeInput();//2nd number
     }
 
     /**
