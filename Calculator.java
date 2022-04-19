@@ -87,6 +87,8 @@ public class Calculator {
     protected void setOperator(char c)
     {
         //take the char and match with an operator
+        //use scanner to get operator.
+        //repeat until an operator is successful.
         switch (c) {
             case '+':
                 this.operator = '+';
@@ -113,7 +115,7 @@ public class Calculator {
         int set = 0;
         do {
             Scanner scan = new Scanner(System.in);
-            System.out.println("Please Enter a Number greater than 0:");
+            System.out.println("Please Enter a Number:");
             if (scan.hasNextInt()) {
                 if (this.intNum1 == 0) {
                     this.intNum1 = scan.nextInt();
